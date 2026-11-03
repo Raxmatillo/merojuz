@@ -75,3 +75,7 @@
 .package-card:nth-child(3):after{background:rgba(243,184,71,.11)}
 @media(max-width:760px){.package-heading{align-items:flex-start;flex-direction:column;gap:10px;margin-top:50px;padding-top:27px}.package-heading>p{max-width:520px;font-size:13px}.package-grid{grid-template-columns:1fr;gap:13px}.package-card{min-height:128px;padding:19px 18px;gap:15px}.package-count{width:66px;height:66px;border-radius:18px;font-size:26px}.package-card>div strong{font-size:21px}.package-arrow{width:40px;height:40px}}
 @media(max-width:380px){.package-card{gap:11px;padding:16px 14px}.package-count{width:58px;height:58px;font-size:23px}.package-card>div strong{font-size:18px}.package-arrow{width:36px;height:36px}}
+
+/* Closing CTA: make the teacher action visible on the light section */
+.closing-actions .button-white-outline{background:#fff;border:1px solid #dfe5ef;color:var(--navy);box-shadow:0 7px 18px rgba(20,33,61,.08)}
+.closing-actions .button-white-outline:hover{background:#fff;border-color:#cbd5e4;box-shadow:0 10px 22px rgba(20,33,61,.12)}
