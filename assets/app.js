@@ -7,21 +7,30 @@ en:{nav_platforms:'Platforms',nav_how:'How it works',nav_pricing:'Pricing',nav_a
 Object.assign(copy.uz,{
  pricing_kicker:"TARIFLAR VA BILET PAKETLARI",pricing_title:"Özingizga mos tarifni tanlang",pricing_text:"Oylik limitlarni solishtiring yoki kerak bölganda donalik bilet paketini tanlang.",
  th_plan:"Tarif",th_price:"Narxi",th_bilet:"Bilet / oy",th_tests:"Test + töplam / oy",th_groups:"Guruh",th_students:"Öquvçi",th_questions:"Şaxsiy savol",
- price_free:"Bepul",price_standard:"49 000 so‘m / oy",price_pro:"79 000 so‘m / oy",price_max:"119 000 so‘m / oy",
+ price_free:"Bepul",price_standard:"49 000 so‘m",price_pro:"79 000 so‘m",price_max:"119 000 so‘m",
+ plan_month:"oyiga",plan_free_note:"Boshlash uchun",plan_standard_note:"Muntazam foydalanish",plan_pro_note:"Ko‘proq imkoniyat",plan_max_note:"Eng katta limitlar",plan_popular:"Ommabop",
+ plan_free_desc:"OMR Meroj bilan tanishib ko‘ring.",plan_standard_desc:"Kichik guruhlar va kundalik ishlar uchun.",plan_pro_desc:"Faol o‘qituvchi va katta guruhlar uchun.",plan_max_desc:"Markazlar va yirik jamoalar uchun.",
+ limit_tickets:"bilet / oy",limit_tests:"test va to‘plam / oy",limit_groups:"guruh",limit_students:"o‘quvchi",limit_questions:"shaxsiy savol",plan_cta:"Tarifni tanlash",
  package_kicker:"BIR MARTALIK XARID",package_title:"Donalik bilet paketlari",package_text:"Har bir bilet bitta öquvçi uçun bitta imtihon töplamini tayyorlashga ishlatiladi.",
  package_tickets:"bilet",package_price_20:"24 900 so‘m",package_price_50:"59 000 so‘m",package_price_100:"99 000 so‘m",package_cta:"OMR Meroj’ga ötiş"
 });
 Object.assign(copy.ru,{
  pricing_kicker:"ТАРИФЫ И ПАКЕТЫ БИЛЕТОВ",pricing_title:"Выберите подходящий тариф",pricing_text:"Сравните месячные лимиты подписок или выберите разовый пакет билетов.",
  th_plan:"Тариф",th_price:"Цена",th_bilet:"Билеты / мес.",th_tests:"Тесты + подборки / мес.",th_groups:"Группы",th_students:"Ученики",th_questions:"Свои вопросы",
- price_free:"Бесплатно",price_standard:"49 000 сум / мес.",price_pro:"79 000 сум / мес.",price_max:"119 000 сум / мес.",
+ price_free:"Бесплатно",price_standard:"49 000 сум",price_pro:"79 000 сум",price_max:"119 000 сум",
+ plan_month:"в месяц",plan_free_note:"Для знакомства",plan_standard_note:"Для регулярной работы",plan_pro_note:"Больше возможностей",plan_max_note:"Максимальные лимиты",plan_popular:"Популярный",
+ plan_free_desc:"Попробуйте систему OMR Meroj.",plan_standard_desc:"Для небольших групп и повседневной работы.",plan_pro_desc:"Для активных преподавателей и больших групп.",plan_max_desc:"Для центров и крупных команд.",
+ limit_tickets:"билетов / мес.",limit_tests:"тестов и подборок / мес.",limit_groups:"группа",limit_students:"учеников",limit_questions:"собственных вопросов",plan_cta:"Выбрать тариф",
  package_kicker:"РАЗОВАЯ ПОКУПКА",package_title:"Пакеты билетов",package_text:"Один билет — комплект материалов для одного ученика и одного экзамена.",
  package_tickets:"билет",package_price_20:"24 900 сум",package_price_50:"59 000 сум",package_price_100:"99 000 сум",package_cta:"Перейти в OMR Meroj"
 });
 Object.assign(copy.en,{
  pricing_kicker:"PLANS AND TICKET PACKS",pricing_title:"Choose the plan that fits",pricing_text:"Compare monthly subscription limits or choose a one-time ticket pack when needed.",
  th_plan:"Plan",th_price:"Price",th_bilet:"Tickets / month",th_tests:"Tests + sets / month",th_groups:"Groups",th_students:"Students",th_questions:"Custom questions",
- price_free:"Free",price_standard:"UZS 49,000 / month",price_pro:"UZS 79,000 / month",price_max:"UZS 119,000 / month",
+ price_free:"Free",price_standard:"UZS 49,000",price_pro:"UZS 79,000",price_max:"UZS 119,000",
+ plan_month:"per month",plan_free_note:"Get started",plan_standard_note:"For regular use",plan_pro_note:"More possibilities",plan_max_note:"Highest limits",plan_popular:"Most popular",
+ plan_free_desc:"Try out the OMR Meroj system.",plan_standard_desc:"For small groups and everyday work.",plan_pro_desc:"For active teachers and larger groups.",plan_max_desc:"For centres and larger teams.",
+ limit_tickets:"tickets / month",limit_tests:"tests and sets / month",limit_groups:"group",limit_students:"students",limit_questions:"custom questions",plan_cta:"Choose plan",
  package_kicker:"ONE-TIME PURCHASE",package_title:"One-time ticket packs",package_text:"One ticket prepares an exam set for one student.",
  package_tickets:"tickets",package_price_20:"UZS 24,900",package_price_50:"UZS 59,000",package_price_100:"UZS 99,000",package_cta:"Go to OMR Meroj"
 });
@@ -30,7 +39,6 @@ Object.assign(copy.en,{
 Object.assign(copy.uz,{pricing_action_text:"Tarifni tanlash uçun OMR Meroj tizimiga öting.",pricing_action:"Tarifni tanlash"});
 Object.assign(copy.ru,{pricing_action_text:"Выбрать тариф можно в системе OMR Meroj.",pricing_action:"Выбрать тариф"});
 Object.assign(copy.en,{pricing_action_text:"Choose and manage a plan in the OMR Meroj system.",pricing_action:"Choose a plan"});
-
 const select=document.getElementById('language');
 function setLanguage(lang){const dict=copy[lang]||copy.uz;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const value=dict[el.dataset.i18n];if(value)el.innerHTML=value});const labels={uz:{nav:'Asosiy menyu',language:'Tilni tanlang',menu:'Menyuni ochish',home:'ME’ROJ bosh sahifa',visual:'ME’ROJ platformasi tasviri'},ru:{nav:'Основная навигация',language:'Выбрать язык',menu:'Открыть меню',home:'Главная страница ME’ROJ',visual:'Платформа ME’ROJ'},en:{nav:'Main navigation',language:'Choose language',menu:'Open menu',home:'ME’ROJ home page',visual:'ME’ROJ platform'}}[lang]||{nav:'Asosiy menyu',language:'Tilni tanlang',menu:'Menyuni ochish',home:'ME’ROJ bosh sahifa',visual:'ME’ROJ platformasi tasviri'};document.querySelector('.main-nav').setAttribute('aria-label',labels.nav);select.setAttribute('aria-label',labels.language);document.querySelector('.menu-toggle').setAttribute('aria-label',labels.menu);document.querySelector('.brand').setAttribute('aria-label',labels.home);document.querySelector('.hero-visual').setAttribute('aria-label',labels.visual);document.title=lang==='ru'?'ME’ROJ — образовательная платформа':lang==='en'?'ME’ROJ — education and practice platform':'ME’ROJ — ta’lim va sinov platformasi';select.value=lang;try{localStorage.setItem('meroj-language',lang)}catch{} }
 let saved='uz';try{saved=localStorage.getItem('meroj-language')||'uz'}catch{}setLanguage(saved);select.addEventListener('change',e=>setLanguage(e.target.value));
