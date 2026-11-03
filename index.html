@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#14213d" />
+  <meta name="description" content="ME’ROJ — abituriyentlar uchun ta’lim yo‘nalishlarini izlash va o‘qituvchilar uchun OMR sinovlarini tashkil etish platformasi." />
+  <title>ME’ROJ — ta’lim va sinov platformasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/app.css" />
+  <script defer src="./assets/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ME’ROJ bosh sahifa">
+      <img src="./assets/meroj-logo.png" alt="ME’ROJ logotipi" />
+      <span>ME’ROJ<span class="brand-dot">.</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Menyuni ochish" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Asosiy menyu">
+      <a href="#platforms" data-i18n="nav_platforms">Platformalar</a>
+      <a href="#how" data-i18n="nav_how">Ishlash tartibi</a>
+      <a href="#pricing" data-i18n="nav_pricing">Tariflar</a>
+      <a href="#about" data-i18n="nav_about">Loyiha haqida</a>
+    </nav>
+    <div class="header-actions">
+      <label class="language-wrap"><span class="sr-only">Language</span><select id="language" aria-label="Tilni tanlang"><option value="uz">UZ</option><option value="ru">RU</option><option value="en">EN</option></select></label>
+      <a class="button button-small button-outline" href="https://omr.meroj.uz" data-i18n="nav_login">Kirish</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-mark"></span><span data-i18n="hero_eyebrow">Abituriyentlar va o‘qituvchilar uchun</span></div>
+        <h1 data-i18n="hero_title">Bilimingizni sinang.<br /><em>Keyingi qadamingizni</em> toping.</h1>
+        <p class="hero-lead" data-i18n="hero_text">ME’ROJ ta’lim yo‘nalishlarini solishtirish va qog‘ozdagi sinovlarni tartibli o‘tkazish uchun yagona platforma.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://mandat.meroj.uz"><span data-i18n="hero_mandat">Mandat bo‘limiga o‘tish</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="https://omr.meroj.uz"><span data-i18n="hero_omr">O‘qituvchilar uchun OMR</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">✓</span><span data-i18n="hero_note">Mustaqil ta’lim platformasi. Rasmiy qabul organi emas.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="ME’ROJ platformasi tasviri">
+        <div class="visual-glow"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="visual-logo"><img src="./assets/meroj-logo.png" alt="" /></div>
+        <div class="mini-card mini-card-top"><span class="mini-icon teal">⌕</span><div><strong data-i18n="visual_path">Mos yo‘nalishni izlash</strong><small data-i18n="visual_path_sub">Ballar · kvotalar · fanlar</small></div><span class="mini-arrow">↗</span></div>
+        <div class="mini-card mini-card-bottom"><span class="mini-icon blue">▦</span><div><strong data-i18n="visual_omr">OMR sinov tizimi</strong><small data-i18n="visual_omr_sub">Test · javob varaqasi · natija</small></div><span class="status-dot"></span></div>
+        <div class="hero-caption"><span class="caption-line"></span><span data-i18n="visual_caption">Bir maqsad — aniqroq tayyorgarlik</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="ME’ROJ yo‘nalishlari">
+      <div class="trust-inner"><span data-i18n="strip_label">BIR PLATFORMADA</span><span class="strip-divider"></span><span data-i18n="strip_one">Abituriyentlar uchun yo‘nalish tanlash</span><span class="strip-divider"></span><span data-i18n="strip_two">O‘qituvchilar uchun sinov tashkil etish</span></div>
+    </section>
+
+    <section id="platforms" class="section-shell section-pad">
+      <div class="section-heading">
+        <div><span class="section-kicker" data-i18n="platform_kicker">ME’ROJ PLATFORMALARI</span><h2 data-i18n="platform_title">Maqsadingizga mos<br />bo‘limni tanlang</h2></div>
+        <p data-i18n="platform_intro">Abituriyent bo‘lsangiz ham, o‘qituvchi bo‘lsangiz ham, kerakli vosita shu yerda.</p>
+      </div>
+      <div class="platform-grid">
+        <article class="platform-card mandate-card">
+          <div class="card-top"><span class="icon-box teal-box"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16M6 3v4m12-4v4M5 9h14v11H5zM8 13h3m2 0h3m-8 3h3"/></svg></span><span class="card-tag tag-teal" data-i18n="mandat_tag">ABITURIYENTLAR UCHUN</span></div>
+          <h3>Mandat</h3>
+          <p data-i18n="mandat_desc">O‘tgan yilgi kirish ballari, qabul kvotalari va fanlar majmuasini ko‘rib, sizga mos ta’lim yo‘nalishlarini toping.</p>
+          <ul class="feature-list"><li data-i18n="mandat_feat1">Oliy ta’lim muassasasi va yo‘nalishlarni izlash</li><li data-i18n="mandat_feat2">Yillar kesimida ballar va kvotalarni ko‘rish</li><li data-i18n="mandat_feat3">Yo‘nalishlarni o‘zaro solishtirish</li></ul>
+          <a class="text-link teal-link" href="https://mandat.meroj.uz"><span data-i18n="mandat_cta">Mandat bo‘limiga o‘tish</span><span aria-hidden="true">↗</span></a>
+          <div class="card-watermark">M</div>
+        </article>
+        <article class="platform-card omr-card">
+          <div class="card-top"><span class="icon-box blue-box"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6m-6 4h2m2 0h2m-6 4h2m2 0h2"/></svg></span><span class="card-tag tag-blue" data-i18n="omr_tag">O‘QITUVCHILAR UCHUN</span></div>
+          <h3>OMR Meroj</h3>
+          <p data-i18n="omr_desc">Qog‘ozda sinov o‘tkazing: savollarni tanlang, materiallarni chop eting va javob varaqalarini OMR orqali tekshiring.</p>
+          <ul class="feature-list"><li data-i18n="omr_feat1">30, 60 yoki 90 savollik testlar</li><li data-i18n="omr_feat2">Test kitobchasi va javob varaqasi</li><li data-i18n="omr_feat3">Natijalar va guruhlarni boshqarish</li></ul>
+          <a class="text-link blue-link" href="https://omr.meroj.uz"><span data-i18n="omr_cta">OMR Meroj’ni ko‘rish</span><span aria-hidden="true">↗</span></a>
+          <div class="card-watermark">M</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="section-shell section-pad about-layout">
+        <div class="about-art"><div class="art-grid"></div><div class="art-monogram"><img src="./assets/meroj-logo.png" alt="ME’ROJ belgisi" /></div><div class="art-label"><span class="art-label-dot"></span><span data-i18n="about_art_label">O‘QISH VA SINOV UCHUN</span></div></div>
+        <div class="about-copy"><span class="section-kicker" data-i18n="about_kicker">LOYIHANING MAQSADI</span><h2 data-i18n="about_title">Tayyorgarlikni<br /><em>aniqroq va tartibliroq</em> qiling</h2><p data-i18n="about_text">ME’ROJ abituriyentlarga mavjud qabul ma’lumotlari asosida yo‘nalishlarni o‘rganishga, o‘qituvchilarga esa sinovlarni samarali tashkil etishga yordam beradi.</p>
+          <div class="about-points"><div><span class="point-number">01</span><p data-i18n="about_point1">Qaror qabul qilish uchun kerakli ma’lumotlarni bir joyda jamlash.</p></div><div><span class="point-number">02</span><p data-i18n="about_point2">O‘qituvchining sinov tayyorlash va tekshirish ishlarini yengillashtirish.</p></div><div><span class="point-number">03</span><p data-i18n="about_point3">Haqiqiy imtihonga yaqin mashq orqali o‘z bilimini baholashga ko‘maklashish.</p></div></div>
+          <p class="independent-note"><span>i</span><span data-i18n="independent_note">ME’ROJ — mustaqil ta’lim loyihasi. Platforma davlat tashkiloti yoki rasmiy qabul tizimi bilan bog‘liq emas.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-pad omr-details">
+      <div class="section-heading">
+        <div><span class="section-kicker blue-kicker" data-i18n="tools_kicker">O‘QITUVCHILAR UCHUN</span><h2 data-i18n="tools_title">Sinovning har bir<br />bosqichi bir tizimda</h2></div>
+        <p data-i18n="tools_intro">Test tuzishdan natijalarni ko‘rishgacha bo‘lgan jarayonni soddalashtiring.</p>
+      </div>
+      <div class="tools-grid">
+        <article class="tool-item"><span class="tool-index">01</span><span class="tool-symbol">▤</span><h3 data-i18n="tool1_title">Savollar banki</h3><p data-i18n="tool1_text">Kerakli savollarni tanlab, test to‘plamini shakllantiring.</p></article>
+        <article class="tool-item"><span class="tool-index">02</span><span class="tool-symbol">▦</span><h3 data-i18n="tool2_title">Chop etishga tayyor</h3><p data-i18n="tool2_text">Kitobcha va belgilash kataklari o‘zgarmas javob varaqasini tayyorlang.</p></article>
+        <article class="tool-item"><span class="tool-index">03</span><span class="tool-symbol">◉</span><h3 data-i18n="tool3_title">OMR tekshiruvi</h3><p data-i18n="tool3_text">Skanerlangan javob varaqalarini tizimda tekshiring.</p></article>
+        <article class="tool-item"><span class="tool-index">04</span><span class="tool-symbol">↗</span><h3 data-i18n="tool4_title">Tushunarli natijalar</h3><p data-i18n="tool4_text">O‘quvchi, guruh va imtihonlar bo‘yicha natijalarni ko‘ring.</p></article>
+      </div>
+    </section>
+
+    <section id="how" class="process-section">
+      <div class="section-shell section-pad">
+        <div class="section-heading process-heading"><div><span class="section-kicker" data-i18n="process_kicker">QANDAY ISHLAYDI?</span><h2 data-i18n="process_title">Boshlash oson.<br />Keyingi qadam aniq.</h2></div><p data-i18n="process_intro">Har bir platforma o‘z foydalanuvchisining vazifasiga mos yo‘l ko‘rsatadi.</p></div>
+        <div class="process-grid">
+          <article class="process-card process-mandat"><div class="process-head"><span class="process-badge teal-box">M</span><div><small data-i18n="process_for_applicant">ABITURIYENT UCHUN</small><h3>Mandat</h3></div></div><ol><li data-i18n="app_step1">Mandat bo‘limiga kiring.</li><li data-i18n="app_step2">Oliy ta’lim muassasasi yoki yo‘nalishni tanlang.</li><li data-i18n="app_step3">Fanlar majmuasi, kvota va kirish ballarini ko‘ring.</li><li data-i18n="app_step4">Mos variantlarni solishtiring.</li></ol><a class="text-link teal-link" href="https://mandat.meroj.uz"><span data-i18n="process_app_cta">Yo‘nalishlarni ko‘rish</span><span>↗</span></a></article>
+          <article class="process-card process-omr"><div class="process-head"><span class="process-badge blue-box">OMR</span><div><small data-i18n="process_for_teacher">O‘QITUVCHI UCHUN</small><h3>OMR Meroj</h3></div></div><ol><li data-i18n="teacher_step1">Ro‘yxatdan o‘ting, guruh va o‘quvchilarni kiriting.</li><li data-i18n="teacher_step2">Savollarni tanlab, 30, 60 yoki 90 savollik test yarating.</li><li data-i18n="teacher_step3">Kitobcha va javob varaqasini chop eting.</li><li data-i18n="teacher_step4">Varaqlarni skanerlang va natijalarni ko‘ring.</li></ol><a class="text-link blue-link" href="https://omr.meroj.uz"><span data-i18n="process_teacher_cta">OMR Meroj’ga o‘tish</span><span>↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section-shell section-pad pricing-section">
+      <div class="pricing-banner"><div class="pricing-copy"><span class="section-kicker" data-i18n="pricing_kicker">TARIFLAR VA PAKETLAR</span><h2 data-i18n="pricing_title">O‘zingizga mos<br />foydalanish usulini tanlang</h2><p data-i18n="pricing_text">Obuna tariflari va donalik imtihon paketlari ko‘zda tutilgan. Narx va foydalanish limitlari tasdiqlangach, shu sahifada yangilanadi.</p><a class="button button-white" href="https://omr.meroj.uz"><span data-i18n="pricing_cta">Tariflarni ko‘rish</span><span>↗</span></a></div><div class="pricing-options"><div class="price-option"><span class="price-icon">↻</span><div><h3 data-i18n="subscription_title">Obuna tariflari</h3><p data-i18n="subscription_text">Muntazam foydalanish uchun. Imkoniyatlar va amal qilish muddati tarifga qarab belgilanadi.</p></div><span class="option-arrow">→</span></div><div class="price-option"><span class="price-icon single">1×</span><div><h3 data-i18n="single_title">Donalik paket</h3><p data-i18n="single_text">Kerak bo‘lganda bitta imtihon yoki xizmatdan foydalanish imkoniyati.</p></div><span class="option-arrow">→</span></div><p class="price-disclaimer"><span>i</span><span data-i18n="price_disclaimer">Hozircha tasdiqlanmagan narxlar ko‘rsatilmagan. Tariflar admin boshqaruv panelidan yangilanadi.</span></p></div></div>
+    </section>
+
+    <section class="closing-section"><div class="section-shell closing-inner"><div><span class="section-kicker" data-i18n="closing_kicker">ME’ROJ BILAN DAVOM ETING</span><h2 data-i18n="closing_title">Maqsadingiz sari<br />navbatdagi qadam.</h2></div><div class="closing-actions"><a class="button button-teal" href="https://mandat.meroj.uz"><span data-i18n="closing_mandat">Mandat bo‘limi</span><span>↗</span></a><a class="button button-white-outline" href="https://omr.meroj.uz"><span data-i18n="closing_omr">O‘qituvchilar uchun OMR</span><span>↗</span></a></div></div></section>
+  </main>
+
+  <footer id="contact" class="site-footer"><div class="section-shell footer-main"><a class="brand footer-brand" href="#top"><img src="./assets/meroj-logo.png" alt="" /><span>ME’ROJ<span class="brand-dot">.</span></span></a><p data-i18n="footer_desc">Ta’lim yo‘nalishlarini o‘rganish va sinovlarni tashkil etish uchun mustaqil platforma.</p><div class="footer-links"><a href="https://mandat.meroj.uz">mandat.meroj.uz ↗</a><a href="https://omr.meroj.uz">omr.meroj.uz ↗</a></div><div class="contact-placeholder"><span class="contact-icon">✉</span><div><strong data-i18n="contact_title">Bog‘lanish</strong><span data-i18n="contact_placeholder">Aloqa ma’lumotlari qo‘shiladi</span></div></div></div><div class="section-shell footer-bottom"><span>© <span id="year"></span> ME’ROJ</span><span data-i18n="footer_independent">Mustaqil ta’lim loyihasi</span><a href="#top" data-i18n="back_top">Yuqoriga ↑</a></div></footer>
+</body>
+</html>
