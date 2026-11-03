@@ -2,3 +2,32 @@
 
 @media(min-width:761px){.pricing-table th,.pricing-table td{font-size:10px}.pricing-table thead th{font-size:9px}.pricing-table tbody th.plan-name{font-size:11px}.pricing-table td strong{font-size:10px}.package-heading>p{font-size:10px}}
 @media(max-width:760px){.pricing-table tbody th.plan-name{font-size:12px}.pricing-table .mobile-label{font-size:8px}.pricing-table td strong{font-size:10px}.package-heading>p{font-size:10px}}
+
+/* Subscription plans: visual cards instead of a comparison table. */
+.plans-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;align-items:stretch;margin-top:34px}
+.plan-card{position:relative;display:flex;flex-direction:column;min-width:0;padding:23px 20px 20px;border:1px solid #e2e7f0;border-radius:20px;background:#fff;box-shadow:0 12px 32px rgba(20,33,61,.055);transition:transform .2s,box-shadow .2s,border-color .2s}
+.plan-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(20,33,61,.1)}
+.plan-card-head{display:flex;flex-direction:column;gap:5px;margin-bottom:23px}
+.plan-label{color:var(--navy);font-size:18px;font-weight:800;letter-spacing:-.5px}
+.plan-note{color:#8490a4;font-size:10px;line-height:1.4}
+.plan-price{display:flex;flex-direction:column;gap:4px;min-height:61px;margin-bottom:8px}
+.plan-price strong{color:var(--navy);font-size:clamp(20px,2vw,25px);letter-spacing:-1px;line-height:1.2;white-space:nowrap}
+.plan-price span{color:#8691a4;font-size:10px}
+.plan-description{min-height:39px;margin:0 0 17px;color:#68758a;font-size:10px;line-height:1.65}
+.plan-features{display:grid;gap:0;list-style:none;padding:0;margin:0 0 21px;border-top:1px solid #edf0f5}
+.plan-features li{display:flex;align-items:center;gap:8px;min-height:38px;border-bottom:1px solid #edf0f5;color:#728096;font-size:9px;line-height:1.3}
+.plan-features li strong{min-width:30px;color:var(--navy);font-size:12px;font-weight:800}
+.plan-button{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding:12px 13px;border-radius:11px;font-size:10px;font-weight:800;transition:transform .2s,background .2s,box-shadow .2s}
+.plan-button:hover{transform:translateY(-2px)}
+.plan-button-light{border:1px solid #dfe5ef;color:var(--navy);background:#fff}
+.plan-button-light:hover{background:#f7f8fc}
+.plan-button-primary{background:var(--blue);color:#fff;box-shadow:0 8px 18px rgba(49,87,213,.2)}
+.plan-pro{border:2px solid var(--blue);padding:22px 19px 19px;box-shadow:0 18px 42px rgba(49,87,213,.14);transform:translateY(-9px)}
+.plan-pro:hover{transform:translateY(-13px)}
+.plan-pro .plan-label,.plan-pro .plan-price strong{color:var(--blue)}
+.popular-badge{position:absolute;top:-13px;right:17px;display:inline-flex;align-items:center;gap:5px;padding:6px 11px;border-radius:999px;background:var(--blue);color:white;font-size:9px;font-weight:800;box-shadow:0 6px 14px rgba(49,87,213,.22)}
+.plan-free{background:linear-gradient(180deg,#f3fbf9 0%,#fff 45%)}
+.plan-free .plan-label{color:var(--teal)}
+.plan-max .plan-label{color:#9a6a06}
+@media(max-width:1050px){.plans-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.plan-pro{transform:none}.plan-pro:hover{transform:translateY(-4px)}.plan-price strong{font-size:25px}}
+@media(max-width:600px){.plans-grid{grid-template-columns:1fr;gap:15px;margin-top:24px}.plan-card,.plan-pro{padding:21px 19px 18px}.plan-card-head{margin-bottom:17px}.plan-price{min-height:0;margin-bottom:8px}.plan-price strong{font-size:25px}.plan-description{min-height:0;margin-bottom:14px}.plan-features{grid-template-columns:1fr 1fr;column-gap:14px;margin-bottom:17px}.plan-features li{min-height:42px}.plan-features li:last-child{grid-column:1/-1}.popular-badge{right:15px}}
