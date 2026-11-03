@@ -39,6 +39,28 @@ Object.assign(copy.en,{
 Object.assign(copy.uz,{pricing_action_text:"Tarifni tanlash uçun OMR Meroj tizimiga öting.",pricing_action:"Tarifni tanlash"});
 Object.assign(copy.ru,{pricing_action_text:"Выбрать тариф можно в системе OMR Meroj.",pricing_action:"Выбрать тариф"});
 Object.assign(copy.en,{pricing_action_text:"Choose and manage a plan in the OMR Meroj system.",pricing_action:"Choose a plan"});
+
+Object.assign(copy.uz,{
+ mandat_desc:"Mandat bölimida ötgan yilgi kirış ballari, qabul kvotalari va fanlar majmuasi ma’lumotlarini toping.",
+ mandat_feat1:"Ötgan yilgi kirış ballari",mandat_feat2:"Qabul kvotalari va fanlar majmuasi",mandat_feat3:"OTM va yönalişlarni soliştiriş",
+ samples_kicker:"OMR HUJJATLARI NAMUNASI",samples_title:"Imtihondan natijagaça —<br />hammasi aniq",samples_intro:"Javob varaqasi va natija hisobotining namunalarini köring.",
+ sample_answer_tag:"01 · JAVOB VARAQASI",sample_answer_title:"OMR javob varaqasi",sample_answer_text:"Öquvçi ma’lumotlari, fanlar va belgilash kataklari bitta tartibli varaqda.",
+ sample_result_tag:"02 · NATIJA HISOBOTI",sample_result_title:"Öquvçi natijalari",sample_result_text:"Umumiy ball, toğri va xato javoblar hamda fanlar kesimidagi tahlil."
+});
+Object.assign(copy.ru,{
+ mandat_desc:"В разделе «Мандат» доступны проходные баллы прошлого года, квоты и комбинации предметов.",
+ mandat_feat1:"Проходные баллы прошлого года",mandat_feat2:"Квоты и комбинации предметов",mandat_feat3:"Сравнение вузов и направлений",
+ samples_kicker:"ПРИМЕРЫ OMR-ДОКУМЕНТОВ",samples_title:"От экзамена до результата —<br />всё наглядно",samples_intro:"Посмотрите примеры бланка ответов и отчёта с результатами.",
+ sample_answer_tag:"01 · БЛАНК ОТВЕТОВ",sample_answer_title:"Бланк ответов OMR",sample_answer_text:"Данные ученика, предметы и поля для ответов собраны на одном листе.",
+ sample_result_tag:"02 · ОТЧЁТ О РЕЗУЛЬТАТАХ",sample_result_title:"Результаты ученика",sample_result_text:"Общий балл, верные и неверные ответы, анализ по предметам."
+});
+Object.assign(copy.en,{
+ mandat_desc:"The Mandat section shows last year's admission scores, quotas and subject combinations.",
+ mandat_feat1:"Last year's admission scores",mandat_feat2:"Admission quotas and subject combinations",mandat_feat3:"Compare universities and programmes",
+ samples_kicker:"OMR DOCUMENT SAMPLES",samples_title:"From exam to results —<br />clearly presented",samples_intro:"See sample answer sheets and a student results report.",
+ sample_answer_tag:"01 · ANSWER SHEET",sample_answer_title:"OMR answer sheet",sample_answer_text:"Student details, subjects and answer bubbles arranged on one clear page.",
+ sample_result_tag:"02 · RESULTS REPORT",sample_result_title:"Student results",sample_result_text:"Overall score, correct and incorrect answers, and subject-level analysis."
+});
 const select=document.getElementById('language');
 function setLanguage(lang){const dict=copy[lang]||copy.uz;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const value=dict[el.dataset.i18n];if(value)el.innerHTML=value});const labels={uz:{nav:'Asosiy menyu',language:'Tilni tanlang',menu:'Menyuni ochish',home:'ME’ROJ bosh sahifa',visual:'ME’ROJ platformasi tasviri'},ru:{nav:'Основная навигация',language:'Выбрать язык',menu:'Открыть меню',home:'Главная страница ME’ROJ',visual:'Платформа ME’ROJ'},en:{nav:'Main navigation',language:'Choose language',menu:'Open menu',home:'ME’ROJ home page',visual:'ME’ROJ platform'}}[lang]||{nav:'Asosiy menyu',language:'Tilni tanlang',menu:'Menyuni ochish',home:'ME’ROJ bosh sahifa',visual:'ME’ROJ platformasi tasviri'};document.querySelector('.main-nav').setAttribute('aria-label',labels.nav);select.setAttribute('aria-label',labels.language);document.querySelector('.menu-toggle').setAttribute('aria-label',labels.menu);document.querySelector('.brand').setAttribute('aria-label',labels.home);document.querySelector('.hero-visual').setAttribute('aria-label',labels.visual);document.title=lang==='ru'?'ME’ROJ — образовательная платформа':lang==='en'?'ME’ROJ — education and practice platform':'ME’ROJ — ta’lim va sinov platformasi';select.value=lang;try{localStorage.setItem('meroj-language',lang)}catch{} }
 let saved='uz';try{saved=localStorage.getItem('meroj-language')||'uz'}catch{}setLanguage(saved);select.addEventListener('change',e=>setLanguage(e.target.value));
