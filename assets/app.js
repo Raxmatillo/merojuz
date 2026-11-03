@@ -26,6 +26,11 @@ Object.assign(copy.en,{
  package_tickets:"tickets",package_price_20:"UZS 24,900",package_price_50:"UZS 59,000",package_price_100:"UZS 99,000",package_cta:"Go to OMR Meroj"
 });
 
+
+Object.assign(copy.uz,{pricing_action_text:"Tarifni tanlash uçun OMR Meroj tizimiga öting.",pricing_action:"Tarifni tanlash"});
+Object.assign(copy.ru,{pricing_action_text:"Выбрать тариф можно в системе OMR Meroj.",pricing_action:"Выбрать тариф"});
+Object.assign(copy.en,{pricing_action_text:"Choose and manage a plan in the OMR Meroj system.",pricing_action:"Choose a plan"});
+
 const select=document.getElementById('language');
 function setLanguage(lang){const dict=copy[lang]||copy.uz;document.documentElement.lang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const value=dict[el.dataset.i18n];if(value)el.innerHTML=value});const labels={uz:{nav:'Asosiy menyu',language:'Tilni tanlang',menu:'Menyuni ochish',home:'ME’ROJ bosh sahifa',visual:'ME’ROJ platformasi tasviri'},ru:{nav:'Основная навигация',language:'Выбрать язык',menu:'Открыть меню',home:'Главная страница ME’ROJ',visual:'Платформа ME’ROJ'},en:{nav:'Main navigation',language:'Choose language',menu:'Open menu',home:'ME’ROJ home page',visual:'ME’ROJ platform'}}[lang]||{nav:'Asosiy menyu',language:'Tilni tanlang',menu:'Menyuni ochish',home:'ME’ROJ bosh sahifa',visual:'ME’ROJ platformasi tasviri'};document.querySelector('.main-nav').setAttribute('aria-label',labels.nav);select.setAttribute('aria-label',labels.language);document.querySelector('.menu-toggle').setAttribute('aria-label',labels.menu);document.querySelector('.brand').setAttribute('aria-label',labels.home);document.querySelector('.hero-visual').setAttribute('aria-label',labels.visual);document.title=lang==='ru'?'ME’ROJ — образовательная платформа':lang==='en'?'ME’ROJ — education and practice platform':'ME’ROJ — ta’lim va sinov platformasi';select.value=lang;try{localStorage.setItem('meroj-language',lang)}catch{} }
 let saved='uz';try{saved=localStorage.getItem('meroj-language')||'uz'}catch{}setLanguage(saved);select.addEventListener('change',e=>setLanguage(e.target.value));
