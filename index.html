@@ -120,20 +120,49 @@
         <div><span class="section-kicker" data-i18n="pricing_kicker">TARIFLAR VA PAKETLAR</span><h2 data-i18n="pricing_title">Sizga mos tarifni tanlang</h2></div>
         <p data-i18n="pricing_text">Oylik obuna tariflarini solishtiring yoki kerak bo‘lganda donalik bilet paketini tanlang.</p>
       </div>
-      <div class="pricing-table-wrap">
-        <table class="pricing-table">
-          <thead><tr>
-            <th scope="col" data-i18n="th_plan">Tarif</th><th scope="col" data-i18n="th_price">Narxi</th><th scope="col" data-i18n="th_bilet">Bilet / oy</th><th scope="col" data-i18n="th_tests">Test + to‘plam / oy</th><th scope="col" data-i18n="th_groups">Guruh</th><th scope="col" data-i18n="th_students">O‘quvchi</th><th scope="col" data-i18n="th_questions">Shaxsiy savol</th>
-          </tr></thead>
-          <tbody>
-            <tr class="plan-free"><th scope="row" class="plan-name">Free</th><td><span class="mobile-label" data-i18n="th_price">Narxi</span><strong data-i18n="price_free">Bepul</strong></td><td><span class="mobile-label" data-i18n="th_bilet">Bilet / oy</span><strong>20</strong></td><td><span class="mobile-label" data-i18n="th_tests">Test + to‘plam / oy</span><strong>5</strong></td><td><span class="mobile-label" data-i18n="th_groups">Guruh</span><strong>1</strong></td><td><span class="mobile-label" data-i18n="th_students">O‘quvchi</span><strong>20</strong></td><td><span class="mobile-label" data-i18n="th_questions">Shaxsiy savol</span><strong>50</strong></td></tr>
-            <tr><th scope="row" class="plan-name">Standard</th><td><span class="mobile-label" data-i18n="th_price">Narxi</span><strong data-i18n="price_standard">49 000 so‘m / oy</strong></td><td><span class="mobile-label" data-i18n="th_bilet">Bilet / oy</span><strong>50</strong></td><td><span class="mobile-label" data-i18n="th_tests">Test + to‘plam / oy</span><strong>10</strong></td><td><span class="mobile-label" data-i18n="th_groups">Guruh</span><strong>5</strong></td><td><span class="mobile-label" data-i18n="th_students">O‘quvchi</span><strong>100</strong></td><td><span class="mobile-label" data-i18n="th_questions">Shaxsiy savol</span><strong>100</strong></td></tr>
-            <tr class="plan-pro"><th scope="row" class="plan-name">Pro</th><td><span class="mobile-label" data-i18n="th_price">Narxi</span><strong data-i18n="price_pro">79 000 so‘m / oy</strong></td><td><span class="mobile-label" data-i18n="th_bilet">Bilet / oy</span><strong>100</strong></td><td><span class="mobile-label" data-i18n="th_tests">Test + to‘plam / oy</span><strong>20</strong></td><td><span class="mobile-label" data-i18n="th_groups">Guruh</span><strong>15</strong></td><td><span class="mobile-label" data-i18n="th_students">O‘quvchi</span><strong>300</strong></td><td><span class="mobile-label" data-i18n="th_questions">Shaxsiy savol</span><strong>200</strong></td></tr>
-            <tr class="plan-max"><th scope="row" class="plan-name">Max</th><td><span class="mobile-label" data-i18n="th_price">Narxi</span><strong data-i18n="price_max">119 000 so‘m / oy</strong></td><td><span class="mobile-label" data-i18n="th_bilet">Bilet / oy</span><strong>200</strong></td><td><span class="mobile-label" data-i18n="th_tests">Test + to‘plam / oy</span><strong>50</strong></td><td><span class="mobile-label" data-i18n="th_groups">Guruh</span><strong>30</strong></td><td><span class="mobile-label" data-i18n="th_students">O‘quvchi</span><strong>500</strong></td><td><span class="mobile-label" data-i18n="th_questions">Shaxsiy savol</span><strong>500</strong></td></tr>
-          </tbody>
-        </table>
+      <div class="plans-grid">
+        <article class="plan-card plan-free">
+          <div class="plan-card-head"><span class="plan-label">Free</span><span class="plan-note" data-i18n="plan_free_note">Boshlash uchun</span></div>
+          <div class="plan-price"><strong data-i18n="price_free">Bepul</strong><span data-i18n="plan_month">oyiga</span></div>
+          <p class="plan-description" data-i18n="plan_free_desc">OMR Meroj bilan tanishib ko‘ring.</p>
+          <ul class="plan-features">
+            <li><strong>20</strong><span data-i18n="limit_tickets">bilet / oy</span></li><li><strong>5</strong><span data-i18n="limit_tests">test va to‘plam / oy</span></li>
+            <li><strong>1</strong><span data-i18n="limit_groups">guruh</span></li><li><strong>20</strong><span data-i18n="limit_students">o‘quvchi</span></li><li><strong>50</strong><span data-i18n="limit_questions">shaxsiy savol</span></li>
+          </ul>
+          <a class="plan-button plan-button-light" href="https://omr.meroj.uz"><span data-i18n="plan_cta">Tarifni tanlash</span><span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="plan-card">
+          <div class="plan-card-head"><span class="plan-label">Standard</span><span class="plan-note" data-i18n="plan_standard_note">Muntazam foydalanish</span></div>
+          <div class="plan-price"><strong data-i18n="price_standard">49 000 so‘m</strong><span data-i18n="plan_month">oyiga</span></div>
+          <p class="plan-description" data-i18n="plan_standard_desc">Kichik guruhlar va kundalik ishlar uchun.</p>
+          <ul class="plan-features">
+            <li><strong>50</strong><span data-i18n="limit_tickets">bilet / oy</span></li><li><strong>10</strong><span data-i18n="limit_tests">test va to‘plam / oy</span></li>
+            <li><strong>5</strong><span data-i18n="limit_groups">guruh</span></li><li><strong>100</strong><span data-i18n="limit_students">o‘quvchi</span></li><li><strong>100</strong><span data-i18n="limit_questions">shaxsiy savol</span></li>
+          </ul>
+          <a class="plan-button plan-button-light" href="https://omr.meroj.uz"><span data-i18n="plan_cta">Tarifni tanlash</span><span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="plan-card plan-pro">
+          <span class="popular-badge"><span aria-hidden="true">✦</span> <span data-i18n="plan_popular">Ommabop</span></span>
+          <div class="plan-card-head"><span class="plan-label">Pro</span><span class="plan-note" data-i18n="plan_pro_note">Ko‘proq imkoniyat</span></div>
+          <div class="plan-price"><strong data-i18n="price_pro">79 000 so‘m</strong><span data-i18n="plan_month">oyiga</span></div>
+          <p class="plan-description" data-i18n="plan_pro_desc">Faol o‘qituvchi va katta guruhlar uchun.</p>
+          <ul class="plan-features">
+            <li><strong>100</strong><span data-i18n="limit_tickets">bilet / oy</span></li><li><strong>20</strong><span data-i18n="limit_tests">test va to‘plam / oy</span></li>
+            <li><strong>15</strong><span data-i18n="limit_groups">guruh</span></li><li><strong>300</strong><span data-i18n="limit_students">o‘quvchi</span></li><li><strong>200</strong><span data-i18n="limit_questions">shaxsiy savol</span></li>
+          </ul>
+          <a class="plan-button plan-button-primary" href="https://omr.meroj.uz"><span data-i18n="plan_cta">Tarifni tanlash</span><span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="plan-card plan-max">
+          <div class="plan-card-head"><span class="plan-label">Max</span><span class="plan-note" data-i18n="plan_max_note">Eng katta limitlar</span></div>
+          <div class="plan-price"><strong data-i18n="price_max">119 000 so‘m</strong><span data-i18n="plan_month">oyiga</span></div>
+          <p class="plan-description" data-i18n="plan_max_desc">Markazlar va yirik jamoalar uchun.</p>
+          <ul class="plan-features">
+            <li><strong>200</strong><span data-i18n="limit_tickets">bilet / oy</span></li><li><strong>50</strong><span data-i18n="limit_tests">test va to‘plam / oy</span></li>
+            <li><strong>30</strong><span data-i18n="limit_groups">guruh</span></li><li><strong>500</strong><span data-i18n="limit_students">o‘quvchi</span></li><li><strong>500</strong><span data-i18n="limit_questions">shaxsiy savol</span></li>
+          </ul>
+          <a class="plan-button plan-button-light" href="https://omr.meroj.uz"><span data-i18n="plan_cta">Tarifni tanlash</span><span aria-hidden="true">↗</span></a>
+        </article>
       </div>
-      <div class="pricing-actions"><p data-i18n="pricing_action_text">Tarifni tanlash uchun OMR Meroj tizimiga o‘ting.</p><a class="button button-primary" href="https://omr.meroj.uz"><span data-i18n="pricing_action">Tarifni tanlash</span><span aria-hidden="true">↗</span></a></div>
       <div class="package-heading"><div><span class="section-kicker" data-i18n="package_kicker">BIR MARTALIK PAKETLAR</span><h3 data-i18n="package_title">Donalik bilet paketlari</h3></div><p data-i18n="package_text">Har bir bilet bitta o‘quvchi uchun bitta imtihon variantini tayyorlaydi.</p></div>
       <div class="package-grid">
         <article class="package-card"><span class="package-count">20</span><div><h4 data-i18n="package_tickets">bilet</h4><strong data-i18n="package_price_20">24 900 so‘m</strong></div><a href="https://omr.meroj.uz" aria-label="OMR Meroj" class="package-arrow">↗</a></article>
