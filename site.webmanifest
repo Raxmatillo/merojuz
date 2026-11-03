@@ -1,0 +1,16 @@
+{
+  "name": "ME’ROJ — ta’lim va sinov platformasi",
+  "short_name": "ME’ROJ",
+  "lang": "uz-Latn",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F6FA",
+  "theme_color": "#14213D",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
