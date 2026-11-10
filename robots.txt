@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://meroj.uz/sitemap.xml
+Sitemap: https://www.meroj.uz/sitemap.xml
